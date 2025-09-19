@@ -162,7 +162,3 @@ Route::get('/reportes', function () {
 Route::fallback(function () {
     return view('errors.404');
 });
-
-use App\Http\Controllers\MickeyController;
-
-Route::get('/mickey', [MickeyController::class, 'index'])->name('mickey');
